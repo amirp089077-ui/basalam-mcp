@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "basalam-mcp"
+version = "1.0.0"
+description = "Model Context Protocol (MCP) server for Basalam (باسلام) social marketplace and artisan commerce"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "amirp089077-ui"}
+]
+dependencies = []
+
+[project.scripts]
+basalam-mcp = "basalam_mcp.server:main"
+
+[tool.setuptools.packages.find]
+include = ["basalam_mcp*"]
